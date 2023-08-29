@@ -1,0 +1,58 @@
+.card-form-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  /* background-color: red; */
+}
+
+/* main form */
+.card-form {
+  gap: 1rem;
+  width: 100%;
+  max-width: 375px;
+}
+
+/* form labels */
+form label {
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.card-security {
+  grid-template-columns: auto 55%;
+  gap: 0.7rem;
+}
+
+.card-expiration-flex {
+  gap: 0.5rem;
+}
+
+.field-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+/* cvc input field wrapper */
+.cvc-field-wrapper {
+  flex-direction: column;
+}
+
+/* form submit button */
+.submit-btn {
+  border: 0;
+  background: var(--violate-900);
+  color: var(--white-clr);
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+/* form error message */
+.error-message {
+  margin-top: 0.3rem;
+  font-size: 0.875rem;
+  color: var(--error-red-clr);
+}

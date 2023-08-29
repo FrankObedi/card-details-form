@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+label,
+button {
+  font: inherit;
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --active-border-clr: linear-gradient(
+    to right,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  );
+  --error-red-clr: hsl(0, 100%, 66%);
+  --white-clr: hsl(0, 0%, 100%);
+  --violet-400: hsl(270, 3%, 87%);
+  --violet-700: hsl(279, 6%, 55%);
+  --violate-900: hsl(278, 68%, 11%);
+}
+
+body {
+  font-family: "Space Grotesk";
+  /* background: var(--active-border-clr); */
+}
+
+input,
+button {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+input {
+  border: none;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  outline: none;
+  position: relative;
+  /* border: 1px solid var(--violet-400); */
+}
+
+.input-border {
+  background: var(--violet-400);
+  padding: 1px;
+  border-radius: 0.57rem;
+  width: 100%;
+}
+
+.input-border:focus-within {
+  background: var(--active-border-clr); /* Set the linear gradient background */
+}
+
+.error-field {
+  background: var(--error-red-clr);
+}
+
+.grid-flow {
+  display: grid;
+}
+
+.flex-flow {
+  display: flex;
+}
